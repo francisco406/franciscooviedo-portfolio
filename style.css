@@ -224,14 +224,14 @@ nav a:hover {
 }
 .proyectos .container-proyectos {
     min-height: 480px;
-    width: 1172px;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 100px;
-    margin-bottom: 0;
+    max-width: 1172px;      /* límite máximo */
+    width: 100%;            /* ocupa el ancho disponible */
+    margin: 100px auto 0;   /* centra horizontalmente */
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    justify-content: center; /* centra las cards */
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;        /* baja si no entran */
 }
 #card {
     width: 320px;
@@ -543,3 +543,4 @@ font-family: inter;
     transform: translateY(0);
 
 }
+
