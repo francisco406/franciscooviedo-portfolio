@@ -203,6 +203,7 @@ nav a:hover {
 .proyectos {
     min-height: 100vh;
     overflow: hidden;
+    text-align: center;
 }
 .proyectos h2 {
     color: var(--blanco-medio-frio);
@@ -223,15 +224,15 @@ nav a:hover {
     background: linear-gradient(to right, var(--verde), var(--lila));
 }
 .proyectos .container-proyectos {
-    min-height: 480px;
-    max-width: 1172px;      /* límite máximo */
-    width: 100%;            /* ocupa el ancho disponible */
-    margin: 100px auto 0;   /* centra horizontalmente */
     display: flex;
-    justify-content: center; /* centra las cards */
-    align-items: center;
-    gap: 25px;
-    flex-wrap: wrap;        /* baja si no entran */
+    justify-content: center;   /* centra las cards */
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 60px auto 0 auto;  /* 🔥 ESTO las centra */
 }
 #card {
     width: 320px;
@@ -543,4 +544,5 @@ font-family: inter;
     transform: translateY(0);
 
 }
+
 
